@@ -1,0 +1,32 @@
+{
+  "name": "cats-api",
+  "version": "1.0.0",
+  "description": "Application to manage cats database on IBM cloud",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node api.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tnelson2016/cats-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tnelson2016/cats-api/issues"
+  },
+  "homepage": "https://github.com/tnelson2016/cats-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "dotenv": "^5.0.0",
+    "express": "^4.16.2",
+    "node-http-error": "^2.0.0",
+    "pouchdb-adapter-http": "^6.4.3",
+    "pouchdb-core": "^6.4.3",
+    "pouchdb-find": "^6.4.3",
+    "ramda": "^0.25.0",
+    "slugify": "^1.2.9"
+  }
+}
