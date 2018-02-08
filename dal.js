@@ -21,8 +21,25 @@ const getDoc = function(docId, cb) {
   })
 }
 
+const deleteDoc = function(docId, cb) {
+  db.get(docId, function(err, doc) {
+    if (err) {
+      cb(err)
+      return
+    }
+    db.remove(doc, function(err, deleted) {
+      if (err) {
+        cb(err)
+        return
+      }
+      cb(null, deleted)
+    })
+  })
+}
+
 const dal = {
-  getDoc
+  getDoc,
+  deleteDoc
 }
 
 module.exports = dal
